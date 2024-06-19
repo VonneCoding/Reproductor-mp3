@@ -1,0 +1,87 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-padding">
+   <div class="w3-card-2 w3-col l4">
+          <header class="w3-container w3-amber">
+            <script>
+              function cambiarTrack(track) {
+               var value =  track.getAttribute("value")
+               viejo_audio = document.getElementById("reproductor")
+               audio_padre = viejo_audio.parentNode
+               audio_padre.removeChild(viejo_audio)
+               nuevo_audio = document.createElement("audio")
+               nuevo_audio.setAttribute("id","reproductor")
+               nuevo_audio.setAttribute("controls", "controls")
+               // nuevo_audio.setAttribute("autoplay", "autoplay")
+               source = document.createElement("source")
+               source.setAttribute("src", value)
+               source.setAttribute("type", "audio/mpeg")
+               source.setAttribute("id", "reproductorSource")
+               nuevo_audio.appendChild(source)
+               audio_padre.appendChild(nuevo_audio)}
+             function cargarReproductor() {
+               var select = document.getElementById("selectTrack")
+               var value = select.options[0].getAttribute("value")
+               nuevo_audio = document.createElement("audio")
+               nuevo_audio.setAttribute("id","reproductor")
+               nuevo_audio.setAttribute("controls", "controls")       
+               source = document.createElement("source")
+               source.setAttribute("src", value)
+               source.setAttribute("type", "audio/mpeg")
+               source.setAttribute("id", "reproductorSource")
+               nuevo_audio.appendChild(source)
+               padre = document.getElementById("reproductorBox")
+               padre.appendChild(nuevo_audio)
+    }
+    </script>
+            <body background-video=src(C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\Konata Bailando.mp4)>
+               <div class="w3-row">
+                   <div class="w3-col l5">
+                       <div class="w3-container w3-padding">
+                           <div class="w3-container w3-pink ">
+                           <b>MP3 Player</b>
+                           </div>
+                           <div class="w3-bar w3-padding">
+          </header>
+
+    <div id="reproductorBox"></div>
+    <select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+    <option id="1" value="C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\CANCIONES HTML\01.- Black Sheep (Brie Larson Vocal Version).mp3">Black Sheep (Brie Larson Vocal Version)</option>
+    <option id="2" value="C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\CANCIONES HTML\02.- Sofía - Clairo.mp3">Sofia</option>
+    <option id="3" value="C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\CANCIONES HTML\03.-Boys a liar.mp3">Boys a liar</option>
+    <option id="4" value="C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\CANCIONES HTML\04.-SZA - Kill Bill (Audio).mp3">Kill Bill</option>
+    <option id="5" value="C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\CANCIONES HTML\05.-Kenya Grace - Only In My Mind (Official Lyric Video).mp3">Only In My Mind</option>
+    <option id="6" value="C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\CANCIONES HTML\06.-Lana Del Rey - Young and Beautiful">Young and Beautiful</option>
+    <option id="7" value="C:\Users\Vonne DY\Desktop\Cosas escolares\APPS WEB\REPRODUCTOR\CANCIONES HTML\07.-Summertime Sadness — Lana Del Rey">Summertime Sadness</option>
+    </select>
+    <script>cargarReproductor();</script>
+    </div>
+    <div class="w3-row">
+      <div class="w3-padding">
+        <div class="w3-row w3-card-2 w3-col l3">
+               <header class="w3-container w3-purple">
+                 <h1>Reproduciendo..</h1>
+               </header>
+               <div class="w3-container" justify-content="center">
+
+                  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/bf/f8/e2/bff8e2d9-9209-53d2-5f1e-2ad4309c1634/00018771821021.rgb.jpg/600x600bf-60.jpg" width="120" height="120">
+                  <p><b>Title:</b></p>
+                  <p>Black Sheep (Brie Larson Vocal Version)</p>
+                  <p><b>Artist:</b></p>
+                  <p>Metric</p>
+                  <p><b>Album:</b></p>
+                  <p>Scott Pilgrim vs the world</p>
+
+                  <script>
+
+                     allOptions.forEach(function(option) {Option.addEventListener('click', function(e))})
+
+                  </script>
+
+               </div>
+               <footer class="w3-container w3-purple">
+                 <h5></h5>
+               </footer>
+     </div>
+    
+    
